@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         var value = controls.Player.Movement.ReadValue<Vector2>();
         var movement = new Vector3(value.x, 0, value.y);
-        body.AddForce(movement*4);
+        body.AddForce(movement*3);
     }
 
     private void Jump()
